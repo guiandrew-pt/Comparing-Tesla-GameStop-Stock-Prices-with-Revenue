@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Applications/Study/Coursera/03 - (IBM) Data Analytics/06 - Python Project for Data Science/01 - Module 01/.venv/bin/python3.12" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from IPython import start_ipython
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(start_ipython())
